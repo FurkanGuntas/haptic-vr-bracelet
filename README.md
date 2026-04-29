@@ -13,22 +13,23 @@ The system was tested using a custom VR adaptation of the classic "wire-and-hoop
 **Context-Sensitive Collision Detection:** Employs precise capsule colliders in Unity to provide early haptic warnings *before* a physical collision occurs, guiding the user's trajectory.
 
 ## 🛠️ Built With
-**Software:** Unity 3D (2020.3.21f1 LTS), C#, Blender (3D Modeling)
-**Hardware:** Oculus Quest 2, Arduino Mega 2560, HC-05 Bluetooth Module, 6x ERM Vibration Motors 
+
+* **Software:** Unity 3D (2020.3.21f1 LTS), C#, Blender (3D Modeling)
+* **Hardware:** Oculus Quest 2, Arduino Mega 2560, HC-05 Bluetooth Module, 6x ERM Vibration Motors
 
 ## 🚀 Hardware Setup & VR Scene
-*(`![Hardware Setup](3.1.1.png)`)*
+
+![Hardware Setup](3.1.1.png)
 
 The haptic bracelet is designed for mobility. The Arduino Mega and a 10,000 mAh power bank are housed in a wearable armband. Motor activations are dynamically mapped to the user's hand rotation in Unity, ensuring the vibration direction always corresponds accurately to the user's real-world wrist orientation.
 
-*(`![Unity VR Scene](3.3.4.png)`)*
+![Unity VR Scene](3.3.4.png)
 
 ## 📊 Experimental Results
+
 We conducted a user study with 18 participants completing a total of 324 trials under various feedback conditions and difficulty levels.
 
-**Performance Boost:** "Partial Haptic" feedback (moderate intensity, close-range proximity warnings) significantly reduced collision errors compared to both "No Haptic" and "Full Haptic" conditions.
-**Cognitive Load:** The addition of directional haptic feedback improved accuracy without increasing task completion time or mental fatigue, proving the system's efficiency as a sensory guide.
-**User Preference:** 67% of participants preferred the partial haptic condition, noting it was stimulating enough to guide them without being distracting.
+* **Performance Boost:** "Partial Haptic" feedback (moderate intensity, close-range proximity warnings) significantly reduced collision errors compared to both "No Haptic" and "Full Haptic" conditions.
+* **Cognitive Load:** The addition of directional haptic feedback improved accuracy without increasing task completion time or mental fatigue, proving the system's efficiency as a sensory guide.
+* **User Preference:** 67% of participants preferred the partial haptic condition, noting it was stimulating enough to guide them without being distracting.
 
-## 👥 Authors
-* **Furkan Güntaş** * **Zeynep Ecem Gelmez** * Advisor: Assist. Prof. Mine Saraç Stroppa
