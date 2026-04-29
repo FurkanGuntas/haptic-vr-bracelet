@@ -47,7 +47,7 @@ public class CollisionTracker : MonoBehaviour
         if (anyContact && !isCurrentlyTouching)
         {
             CollisionCount++;
-            Debug.Log("🔴 Tel teması algılandı: " + CollisionCount);
+            Debug.Log("Wire contact detected: " + CollisionCount);
             isCurrentlyTouching = true;
         }
         else if (!anyContact && isCurrentlyTouching)
