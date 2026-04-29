@@ -7,7 +7,7 @@ public class EndZoneLoader : MonoBehaviour
     {
         if (other.CompareTag("HandleCapsule"))
         {
-            Debug.Log("🏁 EndSphere'e temas edildi. Scene3'e geçiliyor.");
+            Debug.Log("The EndSphere has been touched. Moving to Scene 3.");
             SceneManager.LoadScene("Scene3");
         }
     }
