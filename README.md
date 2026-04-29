@@ -17,11 +17,11 @@ The system was tested using a custom VR adaptation of the classic "wire-and-hoop
 **Hardware:** Oculus Quest 2, Arduino Mega 2560, HC-05 Bluetooth Module, 6x ERM Vibration Motors 
 
 ## 🚀 Hardware Setup & VR Scene
-*(`3.1.1`)*
+*(`<img width="914" height="789" alt="3 1 1" src="https://github.com/user-attachments/assets/dad40207-86be-4b2d-9173-dbccc0f78c66" />`)*
 
 The haptic bracelet is designed for mobility. The Arduino Mega and a 10,000 mAh power bank are housed in a wearable armband. Motor activations are dynamically mapped to the user's hand rotation in Unity, ensuring the vibration direction always corresponds accurately to the user's real-world wrist orientation.
 
-*(`3.3.4`)*
+*(`<img width="1160" height="654" alt="3 3 4" src="https://github.com/user-attachments/assets/fb96dc16-cae5-472c-8231-828db05f376b" />`)*
 
 ## 📊 Experimental Results
 We conducted a user study with 18 participants completing a total of 324 trials under various feedback conditions and difficulty levels.
