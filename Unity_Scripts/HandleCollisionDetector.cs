@@ -4,9 +4,9 @@ using UnityEngine;
 [System.Serializable]
 public class DirectionSensor
 {
-    public Transform capsuleTransform;      // Her yön için bir kapsül objesi
+    public Transform capsuleTransform;      // A capsule object for each direction.
     public string direction;                // LEFT, RIGHT, FORWARD, BACK, UP, DOWN
-    public bool isVibrating = false;        // Durumu takip et
+    public bool isVibrating = false;        // Follow the situation.
 }
 
 public class HandleCollisionDetector : MonoBehaviour
@@ -42,7 +42,7 @@ public class HandleCollisionDetector : MonoBehaviour
                     if (!sensor.isVibrating)
                     {
                         BluetoothManager.Instance.SendCommand(sensor.direction + ":" + vibrationIntensity);
-                        Debug.Log("🟢 Titreşim başladı: " + sensor.direction);
+                        Debug.Log("The vibration started.: " + sensor.direction);
                         sensor.isVibrating = true;
                     }
                     break;
@@ -52,7 +52,7 @@ public class HandleCollisionDetector : MonoBehaviour
             if (!nearWire && sensor.isVibrating)
             {
                 BluetoothManager.Instance.SendCommand(sensor.direction + ":0");
-                Debug.Log("⚪ Titreşim durdu: " + sensor.direction);
+                Debug.Log("The vibration stopped.: " + sensor.direction);
                 sensor.isVibrating = false;
             }
         }
