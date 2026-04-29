@@ -1,5 +1,7 @@
 # Bringing Tactile Feedback to Virtual Reality: 3-Axis Bluetooth Haptic Bracelet
 
+![Project Demo](Images/gameplay.gif)
+
 ## About The Project
 Virtual Reality (VR) environments often lack physical feedback, which limits depth perception and spatial awareness. This project presents the design, development, and evaluation of a wireless, Bluetooth-enabled haptic feedback bracelet designed to enhance user interaction and navigation in VR.
 
