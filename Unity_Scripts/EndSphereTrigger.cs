@@ -3,8 +3,8 @@ using UnityEngine.SceneManagement;
 
 public class EndSphereTrigger : MonoBehaviour
 {
-    private bool hasLogged = false; // Kayıt yapılıp yapılmadığını takip eder.
-    public GameObject mazeObject;   // Maze11 objesini burada referans göstereceğiz.
+    private bool hasLogged = false; // It tracks whether registration has been completed.
+    public GameObject mazeObject;   
 
     private void OnTriggerEnter(Collider other)
     {
@@ -21,19 +21,19 @@ public class EndSphereTrigger : MonoBehaviour
             if (handleTimer != null && collisionTracker != null)
             {
                 ExperimentLogger.Instance?.SaveSceneData(currentScene, collisionTracker.CollisionCount, handleTimer.TimeElapsed);
-                Debug.Log($"✅ {currentScene} verileri kaydedildi.");
+                Debug.Log($" Data for {currentScene} has been saved.");
             }
 
             if (mazeObject != null)
             {
-                mazeObject.SetActive(false); // Maze11 objesini devre dışı bırak
-                Debug.Log("🚫 Maze11 devre dışı bırakıldı.");
+                mazeObject.SetActive(false); 
+                Debug.Log("Maze has been disabled..");
             }
 
             if (currentScene == "Scene3")
             {
                 ExperimentLogger.Instance?.CloseLogFile();
-                Debug.Log("✅ Scene3 verileri kaydedildi, deney tamamlandı.");
+                Debug.Log("Scene3 data has been saved, the experiment is complete.");
             }
         }
     }
