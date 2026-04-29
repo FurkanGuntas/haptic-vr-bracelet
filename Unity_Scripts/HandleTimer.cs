@@ -38,13 +38,13 @@ public class HandleTimer : MonoBehaviour
     {
         timer = 0f;
         isRunning = true;
-        Debug.Log("⏱ Süre BAŞLADI");
+        Debug.Log("The timer has started.");
     }
 
     void StopTimer()
     {
         isRunning = false;
-        Debug.Log("⏹ Süre DURDU: " + timer.ToString("F2") + " saniye");
+        Debug.Log("Timer stopped: " + timer.ToString("F2") + " second");
     }
 
     void SaveAndHandleScene()
@@ -67,8 +67,8 @@ public class HandleTimer : MonoBehaviour
         }
         else if (currentScene == "Scene3")
         {
-            Debug.Log("🎉 Son sahne tamamlandı.");
-            // Sahne geçişi yapılmaz, sadece veri kaydı ve log bırakılır
+            Debug.Log("Last scene completed.");
+            // No scene transitions are made; only data recording and logging are left.
         }
     }
 }
