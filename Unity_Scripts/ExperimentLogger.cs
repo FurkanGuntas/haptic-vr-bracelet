@@ -39,7 +39,7 @@ public class ExperimentLogger : MonoBehaviour
         {
             file.WriteLine($"{sceneName};{participantNumber};{collisionCount};{elapsedTime:F2}");
             file.Flush();
-            Debug.Log($"📁 Kaydedildi: {sceneName};{participantNumber};{collisionCount};{elapsedTime:F2}");
+            Debug.Log($"Has been saved: {sceneName};{participantNumber};{collisionCount};{elapsedTime:F2}");
         }
     }
 
@@ -49,7 +49,7 @@ public class ExperimentLogger : MonoBehaviour
         {
             file.Close();
             file = null;
-            Debug.Log("📁 Log dosyası başarıyla kapatıldı.");
+            Debug.Log("Log file closed sucessfully.");
         }
     }
 
