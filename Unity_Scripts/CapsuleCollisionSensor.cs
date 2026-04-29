@@ -18,7 +18,7 @@ public class CapsuleCollisionSensor : MonoBehaviour
         if (rend != null)
             originalColor = rend.material.color;
 
-        // Sahneler bazında titreşim şiddetini ayarla
+        // Adjust the vibration intensity on a scene-by-scene basis.
         string sceneName = SceneManager.GetActiveScene().name;
         if (sceneName == "Scene2") vibrationStrength = 120;
         else if (sceneName == "Scene3") vibrationStrength = 200;
@@ -34,7 +34,7 @@ public class CapsuleCollisionSensor : MonoBehaviour
             if (!string.IsNullOrEmpty(motorDir))
             {
                 BluetoothManager.Instance.SendCommand($"{motorDir}:{vibrationStrength}");
-                Debug.Log($"🟢 {capsuleName} değdi → {motorDir}:{vibrationStrength}");
+                Debug.Log($"{capsuleName} değdi → {motorDir}:{vibrationStrength}");
                 if (rend != null) rend.material.color = Color.green;
             }
         }
@@ -49,7 +49,7 @@ public class CapsuleCollisionSensor : MonoBehaviour
             if (!string.IsNullOrEmpty(motorDir))
             {
                 BluetoothManager.Instance.SendCommand($"{motorDir}:0");
-                Debug.Log($"⚪ {capsuleName} ayrıldı → {motorDir}:0");
+                Debug.Log($"{capsuleName} ayrıldı → {motorDir}:0");
                 if (rend != null) rend.material.color = originalColor;
             }
         }
