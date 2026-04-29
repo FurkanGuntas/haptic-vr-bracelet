@@ -21,11 +21,11 @@ public class BluetoothManager : MonoBehaviour
         {
             serialPort = new SerialPort(portName, baudRate);
             serialPort.Open();
-            Debug.Log("✅ Bluetooth bağlantısı sağlandı");
+            Debug.Log("Bluetooth connection established.");
         }
         catch (System.Exception e)
         {
-            Debug.LogError("❌ Bluetooth bağlantı hatası: " + e.Message);
+            Debug.LogError("Bluetooth connection error: " + e.Message);
         }
     }
 
@@ -36,11 +36,11 @@ public class BluetoothManager : MonoBehaviour
             try
             {
                 serialPort.Write(command + "\n");
-                Debug.Log("📤 Gönderildi: " + command);
+                Debug.Log("Sent: " + command);
             }
             catch (System.Exception e)
             {
-                Debug.LogError("⚠️ Veri gönderme hatası: " + e.Message);
+                Debug.LogError("Data transmission error: " + e.Message);
             }
         }
     }
