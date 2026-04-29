@@ -25,6 +25,14 @@ The haptic bracelet is designed for mobility. The Arduino Mega and a 10,000 mAh 
 
 ![Unity VR Scene](Images/3.3.4.png)
 
+### Haptic Trigger Mechanism (Capsule Colliders)
+
+![Capsule Colliders](Images/3.3.2.png)
+
+To provide early and precise directional warnings, the haptic feedback is not triggered by the visible mesh of the handle. Instead, four invisible **capsule colliders** (Top, Bottom, Left, Right) are strategically embedded inside the inner ring of the hoop. 
+
+When the user gets dangerously close to the wire, the corresponding capsule collider makes contact first. This instantly sends a directional signal to the Arduino via Bluetooth, triggering a specific motor on the wrist. This mechanism allows the user to feel the proximity and dynamically correct their hand trajectory *before* making an actual error (hitting the main handle body).
+
 ## Experimental Results
 
 We conducted a user study with 18 participants completing a total of 324 trials under various feedback conditions and difficulty levels.
