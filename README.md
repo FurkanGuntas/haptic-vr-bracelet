@@ -1,6 +1,6 @@
 # Bringing Tactile Feedback to Virtual Reality: 3-Axis Bluetooth Haptic Bracelet
 
-## 📌 About The Project
+## About The Project
 Virtual Reality (VR) environments often lack physical feedback, which limits depth perception and spatial awareness. This project presents the design, development, and evaluation of a wireless, Bluetooth-enabled haptic feedback bracelet designed to enhance user interaction and navigation in VR.
 
 The system was tested using a custom VR adaptation of the classic "wire-and-hoop" game, requiring precise 3D spatial navigation and hand-eye coordination. 
@@ -12,20 +12,20 @@ The system was tested using a custom VR adaptation of the classic "wire-and-hoop
 
 **Context-Sensitive Collision Detection:** Employs precise capsule colliders in Unity to provide early haptic warnings *before* a physical collision occurs, guiding the user's trajectory.
 
-## 🛠️ Built With
+## Built With
 
 * **Software:** Unity 3D (2020.3.21f1 LTS), C#, Blender (3D Modeling)
 * **Hardware:** Oculus Quest 2, Arduino Mega 2560, HC-05 Bluetooth Module, 6x ERM Vibration Motors
 
-## 🚀 Hardware Setup & VR Scene
+## Hardware Setup & VR Scene
 
-![Hardware Setup](3.1.1.png)
+![Hardware Setup](Images/3.1.1.png)
 
 The haptic bracelet is designed for mobility. The Arduino Mega and a 10,000 mAh power bank are housed in a wearable armband. Motor activations are dynamically mapped to the user's hand rotation in Unity, ensuring the vibration direction always corresponds accurately to the user's real-world wrist orientation.
 
-![Unity VR Scene](3.3.4.png)
+![Unity VR Scene](Images/3.3.4.png)
 
-## 📊 Experimental Results
+## Experimental Results
 
 We conducted a user study with 18 participants completing a total of 324 trials under various feedback conditions and difficulty levels.
 
