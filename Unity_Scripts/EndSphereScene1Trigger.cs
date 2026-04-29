@@ -7,7 +7,7 @@ public class EndSphereScene1Trigger : MonoBehaviour
     {
         if (other.CompareTag("HandleCapsule"))
         {
-            Debug.Log("🏁 EndSphere'e temas edildi. Scene2'ye geçiliyor.");
+            Debug.Log("The EndSphere has been touched. Moving to Scene 2.");
             SceneManager.LoadScene("Scene2");
         }
     }
